@@ -11,7 +11,7 @@ function App() {
         <main>
         <Forecast />
       </main>
-      <footer style={{color:'white', background: '#282c34'}}>
+      <footer style={{color:'red', background: '#282c34'}}>
         Page created by Anuj Pradeep
       </footer>
       </header>
