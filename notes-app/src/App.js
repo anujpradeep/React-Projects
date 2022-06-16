@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 
 const App = () => {
+
 	const startingNotes = JSON.parse(
 		localStorage.getItem("notes-app-data")
 	) || [{ id: 0, text: "test", date: new Date().toLocaleDateString }];
+
 	const [notes, setNotes] = useState(startingNotes);
 	const [search_text, set_search_text] = useState("");
 
