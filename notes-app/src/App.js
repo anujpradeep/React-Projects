@@ -32,7 +32,6 @@ const App = () => {
 	const edit_note = (id, new_text) => {
 		const newNotes = notes.filter((note) => {
 			if (note.id === id) {
-				console.log("Changing " + note.text + " , to " + new_text);
 				note.text = new_text;
 			}
 			return note;

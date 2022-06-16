@@ -12,6 +12,7 @@ code {
 		monospace;
 }
 
+/* App file */
 .background-container {
 	background-color: black;
 }
@@ -29,12 +30,18 @@ code {
 	min-height: 100vh;
 }
 
+.header {
+	display: flex;
+}
+
+/* NoteList file */
 .notes-list {
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* AddNote File */
 .new_note {
 	background-color: aqua;
 }
@@ -49,26 +56,6 @@ code {
 	outline: none;
 }
 
-.non_edit_text {
-	border: none;
-	resize:none;
-	background-color: #fef68a;
-	pointer-events: none;
-}
-
-.non_edit_text:focus {
-	outline: none;
-}
-
-.edit_text {
-	resize: none;
-	background-color: #fef67b;	
-}
-
-.edit_text:focus {
-	outline: none;
-}
-
 .save_note {
 	background-color: gray;
 	border: none;
@@ -80,6 +67,8 @@ code {
 	background-color: bisque;
 	cursor: pointer;
 }
+
+/*Note File */
 
 .note {
 	background-color: #fef68a;
@@ -98,6 +87,26 @@ code {
 	justify-content: space-between;
 }
 
+.non_edit_text {
+	border: none;
+	resize: none;
+	background-color: #fef68a;
+	pointer-events: none;
+}
+
+.non_edit_text:focus {
+	outline: none;
+}
+
+.edit_text {
+	resize: none;
+	background-color: #fef67b;
+}
+
+.edit_text:focus {
+	outline: none;
+}
+
 .delete-icon {
 	cursor: pointer;
 }
@@ -106,6 +115,7 @@ code {
 	cursor: pointer;
 }
 
+/* Search File */
 .search {
 	display: flex;
 	align-items: center;
@@ -123,8 +133,4 @@ code {
 
 .search input:focus {
 	outline: none;
-}
-
-.header {
-	display: flex;
 }
