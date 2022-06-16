@@ -9,7 +9,7 @@ const App = () => {
 	) || [{ id: 0, text: "test", date: new Date().toLocaleDateString }];
 	const [notes, setNotes] = useState(startingNotes);
 	const [search_text, set_search_text] = useState("");
-	
+
 	useEffect(() => {
 		localStorage.setItem("notes-app-data", JSON.stringify(notes));
 	}, [notes]);
@@ -48,14 +48,11 @@ const App = () => {
 				</div>
 				<Search handleSearchText={set_search_text} />
 				<NotesList
-					notes={notes.filter((note) => {
-						console.log(note.text);
-						if (note.text
+					notes={notes.filter((note) =>
+						note.text
 							.toLowerCase()
-							.includes(search_text.toLowerCase())) {
-								return note;
-							};
-					})}
+							.includes(search_text.toLowerCase())
+					)}
 					handleAddNote={add_note}
 					handleDeleteNote={delete_note}
 					handleEditText={edit_note}

@@ -43,7 +43,6 @@ code {
 	border: none;
 	resize: none;
 	background-color: aqua;
-
 }
 
 .new_text:focus {
@@ -52,7 +51,7 @@ code {
 
 .non_edit_text {
 	border: none;
-	resize: none;
+	resize:none;
 	background-color: #fef68a;
 	pointer-events: none;
 }
@@ -63,7 +62,7 @@ code {
 
 .edit_text {
 	resize: none;
-	background-color: #fef68a;	
+	background-color: #fef67b;	
 }
 
 .edit_text:focus {

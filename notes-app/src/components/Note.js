@@ -10,31 +10,32 @@ const Note = ({
 }) => {
 	const [note_text, set_Note_Text] = useState(text);
 	const [myEditText, setMyEditText] = useState(false);
-	
+
 	const handleChange = (event) => {
 		set_Note_Text(event.target.value);
 	};
 
 	const onEditClick = () => {
 		setMyEditText(!myEditText);
-		if (myEditText) {
-			handleEditText(id, note_text);
-		}
+		// if (myEditText) {
+		// 	handleEditText(id, note_text);
+		// }
 	};
 
 	return (
 		<div className="note">
 			<textarea
 				className={`${(myEditText && "edit_text") || "non_edit_text"}`}
-				onChange={handleChange}
+				// onChange={handleChange}
 				value={note_text}
-			></textarea>
+			/>
+			{console.log(text)}
 			<div className="note-footer">
 				<small>{date}</small>
 				<MdEdit
 					className="edit-icon"
 					size="1.3em"
-					onClick={onEditClick}
+					// onClick={onEditClick}
 				></MdEdit>
 				<MdDeleteForever
 					className="delete-icon"
